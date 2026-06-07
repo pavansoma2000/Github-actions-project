@@ -12,8 +12,8 @@ on:
     branches: [ "main" ]
 
 env:
-  NAME = Pavan
-  REPO = New
+  NAME: Pavan
+  REPO: New
   
   
 
