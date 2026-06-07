@@ -7,9 +7,9 @@ on:
 
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "Actions" ]
+    branches: [ "GHA" ]
   pull_request:
-    branches: [ "Actions" ]
+    branches: [ "GHA" ]
 
 env:
   NAME: Pavan
@@ -25,7 +25,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
 
-    if: github.repository == 'pavansoma2000/Ai-document-reader-bot'
+    
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
