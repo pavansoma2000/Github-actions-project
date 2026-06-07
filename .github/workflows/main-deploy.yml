@@ -17,15 +17,15 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t node-demo:latest .
+          docker build -t app-gha:latest .
 
       - name: Stop Existing Container
         run: |
-          docker rm -f node-demo || true
+          docker rm -f app-gha || true
 
       - name: Start Container
         run: |
           docker run -d \
             --name node-demo \
             -p 3000:3000 \
-            node-demo:latest
+            app-gha:latest
